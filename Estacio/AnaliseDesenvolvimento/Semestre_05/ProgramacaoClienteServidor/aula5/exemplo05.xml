@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf8"?>
+<?xml-stylesheet type="text/xsl" href="contatos.xsl"?>
+<contatos>
+    <contato nome="Ana">
+        <telefone>1111-1111</telefone>
+        <telefone>1122-1122</telefone>
+        <telefone>1133-1133</telefone>
+    </contato>
+    <contato nome="João">
+        <telefone>2211-1111</telefone>
+        <telefone>2222-1122</telefone>
+    </contato>
+</contatos>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+		<meta charset="utf-8">
+	</head>
+	<body>
+		<script type="text/javascript">
+			function Pessoa(nome, idade){
+				this.nome = nome;
+				this.idade = idade;
+				this.exibir = function(){
+					alert(this.nome+" tem"+this.idade+" ano(s)");
+				}
+			}
+			var p1 = new Pessoa("Ana", 25);
+			var p2 = new Pessoa("Marcos", 36);
+		</script>
+		<button onclick="p1.exibir()">P1</button>
+		<button onclick="p2.exibir()">P2</button>
+	</body>
+</html>

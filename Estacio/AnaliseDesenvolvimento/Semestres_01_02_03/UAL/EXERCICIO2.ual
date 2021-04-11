@@ -1,0 +1,20 @@
+prog RETAUNGULO
+
+    real base ,altura;
+    imprima "\nATENÇAO !!!!!!!!!";
+    imprima "\nFORMATO ACEITO (XX.X)";
+    imprima "\nNUMEROS QUEBRADOS USAR {.} EM VEZ DE {,}";
+    imprima "\nNUMEROS INTEIROS DEVEM SER ACRECIDOS DE .0";
+    imprima "\n";
+    imprima "\n";
+    imprima "#################################################";
+    imprima "\n";
+    imprima "\nFavor inserir base do retangulo em cm...: ";
+    leia base;
+    imprima "Favor inserir altura do retangulo em cm.: ";
+    leia altura;
+    
+    imprima "AREA DO RETANGULO.......................:", base*altura, "CM²";
+    imprima "\n";
+        
+fimprog

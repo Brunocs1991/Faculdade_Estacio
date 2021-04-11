@@ -1,0 +1,6 @@
+<!DOCTYPE colaborador[
+    <!ELEMENT colaborador(nome, matricula)>
+    <!ELEMENT nome (#PCDATA)>
+    <!ELEMENT matricula (#PCDATA)>
+    <!ATTLIST matricula uf CDATA #REQUIRED>
+]>

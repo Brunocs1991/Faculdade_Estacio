@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<?xml-stylesheet tupe="text/css" href="css\turma.css"?>
+<turma codigo ="1001">
+    <professor>Tom Sawyer</professor>
+     <alunos>
+        <aluno matricula="1968001">Gleedy Lee</aluno>
+        <aluno matricula="1968002">Alex Lifeson</aluno>
+        <aluno matricula="1968003">Neil Peart</aluno>
+    </alunos>
+</turma>

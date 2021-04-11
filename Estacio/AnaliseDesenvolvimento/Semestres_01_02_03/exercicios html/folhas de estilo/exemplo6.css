@@ -1,0 +1,14 @@
+h2 {
+border-style: dashed; /* estilo de borda pontilhado */
+border-width: 3px; /* espessura de borda 3px */
+border-left-width: 25px; /* espessura da borda a esquerda de 25px */
+border-right-width: 10px; /* espessura da borda a direita de 10px */
+border-color: navy;  /* cor da linha da borda azul */
+}
+h1 {
+font-size: 5em; /* fonte tamanho 5 vezes o tamanho da fonte corrente */
+color:#ccff00; /* cor da fonte esverdeada */
+background-color: #006400; /* cor do fundo verde escuro */
+border-top: 2px solid #ffcc00; /* borda superior com espessura de 2px estilo sólido e cor laranja */
+border-bottom: 2px solid #ffcc00; /* borda inferior com espessura de 2px estilo sólido e cor laranja */
+}

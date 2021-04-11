@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+
+<html>
+   <head>
+      <meta charset="UTF-8"/>
+      <script src="cores.js"></script>
+   </head>
+   <body>
+      <script>
+         function fatorial(n){
+            if(n>1)
+            return n * fatorial(n-1);
+         else
+            return 1;
+         }
+         x = eval(prompt("Digite um numero",""));
+         document.writeln("Fatorial de "+x+" = "+fatorial(x));
+      </script>
+   </body>
+</html>

@@ -1,0 +1,33 @@
+prog conversor
+
+     real litros, toneladas,km;
+     imprima "\nATENÇAO !!!!!!!!!";
+     imprima "\nFORMATO ACEITO (XX.X)";
+     imprima "\nNUMEROS QUEBRADOS USAR {.} EM VEZ DE {,}";
+     imprima "\nNUMEROS INTEIROS DEVEM SER ACRECIDOS DE .0";
+     imprima "\n";
+     imprima "\n";
+     imprima "\n#######################################################\n";
+     imprima "\nCONVERSOR DE MEDIDAS";
+     imprima "\nTODAS AS CONVERSOES SERÃO FEITAS NESSA SEQUENCIA";
+     imprima "\nNENHUM CAMPO DEVERA FICAR VAZIO OU IRAR GERAR ERRO\n";
+     imprima "\n1)\tLITROS PARA MILILITROS";                        
+     imprima "\n2)\tQUILOMETROS PARA METROS";
+     imprima "\n3)\tTONELADAS PARA GRAMAS\n";
+     imprima "\n#######################################################\n";
+     imprima "\nINSERIR QUANTIDADE DE LITROS........:";
+     leia litros;
+     imprima "INSERIR QUANTIDADE DE QUILOMETROS...:";
+     leia km;
+     imprima "INSERIR QUANTIDADE DE TONELADAS.....:";
+     leia toneladas;
+     imprima "\n#######################################################\n";
+     
+     imprima "\n\t\tCONVERSÃO\n";
+     imprima "\n";
+     imprima litros," LITROS SERIA IGUAL A.........: ", litros*1000," MILILITROS\n";
+     imprima km," QUILOMETROS SERIA IGUAL A....: ", km*1000," METROS\n";
+     imprima toneladas," TONELADAS SERIA IGUAL A......: ", toneladas*1000000," GRAMAS\n";
+     imprima "\n";
+     imprima "\n";
+fimprog

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exemplo de JQuery</title>
+    <script src="..\jquery-3.4.1.js"></script>
+    <script> function exibir(){
+        $("#alvo").fadeIn("slow");
+        $(".par").fadeOut("slow");
+    }</script>
+</head>
+<body>
+    <input type="button" value="Clique aqui !!" onclick="exibir()"/>
+    <p style="display: none; background-color: yellow;" id="alvo">Olá Mundo</p>
+    <p>
+        <span class="impar">1</span>
+        <span class="par">2</span>
+        <span class="impar">3</span>
+        <span class="par">4</span>
+        <span class="impar">5</span>
+        <span class="par">6</span>
+        <span class="impar">7</span>
+        <span class="par">8</span>
+    </p>
+</body>
+</html>

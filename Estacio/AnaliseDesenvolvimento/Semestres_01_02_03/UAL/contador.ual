@@ -1,0 +1,12 @@
+prog exemplo
+  int cont; 
+  real valor, acumulador;
+  acumulador <- 0.0;
+  para(cont<-1; cont<=10; cont++)
+  {
+     imprima "\nValor ", cont, ": ";
+     leia valor;
+     acumulador <- acumulador + valor;
+  }
+ imprima "\nSoma dos valores: ", acumulador;
+fimprog

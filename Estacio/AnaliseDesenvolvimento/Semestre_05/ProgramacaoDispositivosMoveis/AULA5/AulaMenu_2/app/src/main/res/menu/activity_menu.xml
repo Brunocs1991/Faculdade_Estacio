@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/menu1" android:orderInCategory="100" android:title="Suporte Técnico"/>
+    <item android:id="@+id/menu2" android:orderInCategory="100" android:title="Suporte Académico">
+        <menu>
+            <item android:id="@+id/menu21" android:title="Coordenador"/>
+            <item android:id="@+id/menu22" android:title="Professor"/>
+        </menu>
+    </item>
+    <item android:id="@+id/menu3" android:orderInCategory="100" android:title="Controle de Faltas"/>
+    <item android:id="@+id/menu4" android:orderInCategory="100" android:title="Controle de Notas">
+        <menu>
+            <group android:id="@+id/group" android:checkableBehavior="none">
+                <item android:id="@+id/group_item1" android:onClick="onGroupItemClick" android:title="Avaliação 1"/>
+                <item android:id="@+id/group_item2" android:onClick="onGroupItemClick" android:title="Avaliação 2"/>
+                <item android:id="@+id/group_item3" android:onClick="onGroupItemClick" android:title="Atividade Estruturada"/>
+            </group>
+        </menu>
+    </item>
+    <item android:id="@+id/menu5" android:orderInCategory="100" android:title="Controle Financeiro">
+        <menu>
+            <group android:id="@+id/group2" android:checkableBehavior="single">
+                <item android:id="@+id/group2_item1" android:onClick="onGroupItemClick" android:title="Bolsista Integral"/>
+                <item android:id="@+id/group2_item2" android:onClick="onGroupItemClick" android:title="Bolsista Parcial"/>
+                <item android:id="@+id/group2_item3" android:onClick="onGroupItemClick" android:title="Não Bolsista"/>
+            </group>
+        </menu>
+    </item>
+    <item android:id="@+id/menu6" android:orderInCategory="100" android:title="Assunto">
+        <menu>
+            <group android:id="@+id/group3" android:checkableBehavior="all">
+                <item android:id="@+id/group3_item1" android:onClick="onGroupItemClick" android:title="Estágio"/>
+                <item android:id="@+id/group3_item2" android:onClick="onGroupItemClick" android:title="Documentação Pendente"/>
+                <item android:id="@+id/group3_item3" android:onClick="onGroupItemClick" android:title="Orientações"/>
+            </group>
+        </menu>
+    </item>
+</menu>

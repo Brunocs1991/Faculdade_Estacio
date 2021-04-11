@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">AulaMenu_3</string>
+    <string name="about_toast">Toast do String</string>
+    <string name="count">Selecione algo do menu</string>
+</resources>

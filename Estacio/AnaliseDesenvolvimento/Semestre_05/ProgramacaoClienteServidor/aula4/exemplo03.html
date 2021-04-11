@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Exemplo JQuery</title>
+        <script src="..\jquery-3.4.1.js"></script>
+        <script>
+            function alterar(){
+                $(".dados:odd").css("background-color","yellow");
+                $(".dados:even").css("background-color","lightgray");
+            }
+        </script>
+    </head>
+    <body onload="alterar()">
+        <table border="1" width = "100%">
+            <tr>
+                <td>
+                    Código
+                </td>
+                <td>
+                    Descrição
+                </td>
+            </tr>
+            <tr class="dados">
+                <td>
+                    C001A
+                </td>
+                <td>
+                    Teclado
+                </td>
+            </tr>
+            <tr class="dados" >
+                <td>M021X</td>
+                <td>Memória</td>
+            </tr>
+            <tr class="dados" >
+                <td>M025X</td>
+                <td>DVD</td>
+            </tr>
+            <tr class="dados" >
+                <td>P035A</td>
+                <td>Monitor</td>
+            </tr>
+            <tr class="dados" >
+                <td>Q028W</td>
+                <td>Impressora</td>
+            </tr>        
+        </table>    
+    </body>
+</html>

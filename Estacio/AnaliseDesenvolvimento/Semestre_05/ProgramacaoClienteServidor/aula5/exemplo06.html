@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <body>
+    <p id="demo"></p>
+    <script>
+        var text, parser, xmlDoc;
+        text = "<contato><nome>Ana</nome>"+ 
+        "<telefone>1111-1111</telefone></contato>";
+        parser = new DOMParser();
+        xmlDoc = parser.parseFromString(text,"text/xml");
+        var noInfo = xmlDoc.getElementsByTagName("nome")[0];
+        document.getElementById("demo").innerHTML =
+        noInfo.childNodes[0].nodeValue;
+    </script>
+    </body>
+</html>

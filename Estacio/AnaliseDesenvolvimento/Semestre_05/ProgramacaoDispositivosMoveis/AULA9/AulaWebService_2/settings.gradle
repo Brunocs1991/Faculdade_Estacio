@@ -1,0 +1,2 @@
+rootProject.name='AulaWebService_2'
+include ':app'

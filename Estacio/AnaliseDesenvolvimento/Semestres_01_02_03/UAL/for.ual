@@ -1,0 +1,10 @@
+prog estruturaPara
+     int num, cont;
+     para (cont<-1; cont<=3; cont++)
+ {
+     imprima "\nNumero: " ;
+     leia num;
+     imprima "\n", num*2;  
+ }
+imprima "\n";
+fimprog

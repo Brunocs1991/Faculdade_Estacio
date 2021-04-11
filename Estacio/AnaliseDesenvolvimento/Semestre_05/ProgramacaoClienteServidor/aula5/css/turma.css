@@ -1,0 +1,19 @@
+turma {
+    background-color: #000000; 
+    width: 100%;
+}
+professor{
+    color: #ff0000;
+    font-size: 20pt;
+}
+alunos{
+    display: block;
+    margin-bottom: 30pt;
+    margin-left: 0;
+}
+aluno{
+    background-color: #ffffff;
+    border: 1pt;
+    color: #0000ff;
+    font-size: 20pt;
+}

@@ -1,0 +1,13 @@
+prog CONSUMO
+
+    real kmpercorridos,litrosabastecidos;
+    imprima "informar apenas numeros com ponto no lugar da virgula exemplo: 1.0";
+    imprima "\nInformar quilometros percorridos: ";
+    leia kmpercorridos;
+    imprima "Informar quantidade abastecida: ";
+    leia litrosabastecidos;
+            
+    imprima "\nCONSUMO FEITO............:", kmpercorridos/litrosabastecidos,"\t km por litro";
+    imprima "\n";
+    
+fimprog
