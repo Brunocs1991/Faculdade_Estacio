@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="External Storage"
+        android:textSize="24sp"
+        android:textAlignment="center"
+        android:textStyle="bold"/>
+    <EditText
+        android:id="@+id/quadroTexto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:lines="5"
+        android:minLines="3"
+        android:layout_gravity="top|left"
+        android:inputType="textMultiLine">
+        <requestFocus/>
+    </EditText>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1.0"
+        android:layout_margin="20dp">
+        <Button
+            android:id="@+id/botaoGravar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="gravar"
+            android:layout_weight="0.5"
+            />
+        <Button
+            android:id="@+id/botaoLer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ler"
+            android:layout_weight="0.5"/>
+    </LinearLayout>
+    
+    <TextView
+        android:id="@+id/quadroTextoResposta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceMedium"/>
+</LinearLayout>

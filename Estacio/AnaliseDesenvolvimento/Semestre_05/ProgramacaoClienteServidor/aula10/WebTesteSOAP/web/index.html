@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Web Service</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <input type="text" id="valorA">
+        <input type="text" id="valorB">
+        <button onclick="atualizar()">Somar</button>
+        <div id="resposta">Resposta aqui!!!</div>
+        <script>
+            var objA = document.getElementById("valorA");
+            var objB = document.getElementById("valorB");
+            function atualizar() {
+                var url = "http://localhost:8080/WebTesteSOAP/Calculadora";
+                var params = '<?xml version="1.0" encoding="UTF-8"?>' +
+                        ' <S:Envelope ' +
+                        ' xmlns:S="http://schemas.xmlsoap.org/soap/envelope/"> ' +
+                        ' <S:Header/><S:Body>' +
+                        ' <ns2:soma xmlns:ns2="http://webs/">' +
+                        ' <a>' + objA.value + '</a> <b>' + objB.value + '</b> ' +
+                        ' </ns2:soma> ' +
+                        ' </S:Body> </S:Envelope>';
+                xhttp = new XMLHttpRequest();
+                xhttp.open("POST", url, true);
+                xhttp.onreadystatechange = AJAX_Callback;
+                xhttp.setRequestHeader('Content-Type', 'text/xml');
+                xhttp.send(params);
+            }
+            function AJAX_Callback() {
+
+                if (xhttp.readyState === 4 && xhttp.status === 200) {
+                    var parser = new DOMParser();
+                    var xmlDoc = parser.parseFromString(
+                            xhttp.responseText, "text/xml");
+                    var soma = xmlDoc.getElementsByTagName("return");
+                    document.getElementById("resposta").innerHTML =
+                            "Soma: " + soma[0].childNodes[0].nodeValue;
+                }
+            }
+        </script>
+    </body>
+</html>

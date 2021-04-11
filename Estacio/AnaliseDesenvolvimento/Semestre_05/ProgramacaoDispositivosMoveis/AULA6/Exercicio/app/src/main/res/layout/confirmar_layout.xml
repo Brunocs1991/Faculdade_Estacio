@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Confirmar">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="Deseja Confimar?"
+        android:textSize="20dp"/>
+    <LinearLayout
+        android:layout_width="322dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp">
+        <Button
+            android:id="@+id/botaoSim"
+            android:layout_width="145dp"
+            android:layout_height="wrap_content"
+            android:text="sim"
+            android:background="#00cc66"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:layout_margin="5dp"/>
+        <Button
+            android:id="@+id/botaoNao"
+            android:layout_width="156dp"
+            android:layout_height="wrap_content"
+            android:text="Não"
+            android:background="#FF3333"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:layout_margin="5dp"/>
+    </LinearLayout>
+</LinearLayout>

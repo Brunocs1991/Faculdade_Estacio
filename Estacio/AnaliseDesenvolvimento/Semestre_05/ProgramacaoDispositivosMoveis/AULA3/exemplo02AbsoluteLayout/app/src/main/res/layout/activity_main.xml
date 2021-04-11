@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button
+        android:layout_width="113dp"
+        android:layout_height="wrap_content"
+        android:text="Botao 2"
+        android:layout_x="80dp"
+        android:layout_y="200dp"
+        />
+    <Button
+        android:layout_width="113dp"
+        android:layout_height="wrap_content"
+        android:text="Botao 1"
+        android:layout_x="80dp"
+        android:layout_y="100dp"
+        />
+
+</AbsoluteLayout>

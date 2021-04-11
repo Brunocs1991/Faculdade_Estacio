@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Exemplo JQuery</title>
+        <script src="..\jquery-3.4.1.js"></script>
+        <script>
+            function exibir(){
+                $("#dimensao").html($(window).height() + " X " + $(window).width());
+            }
+            $(window).resize(function(){
+                exibir();
+            });
+            $(document).ready(function(){
+                exibir()
+            });
+        </script>
+    </head>
+    <body>
+        Tamanho da Janela: <span id="dimensao"/>
+    </body>
+</html>

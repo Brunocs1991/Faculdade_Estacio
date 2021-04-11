@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html>
+
+   <head>
+
+      <meta charset="UTF-8"/>
+
+      <script src="cores.js"></script>
+
+   </head>
+
+   <body>
+
+      <script>
+
+         for(i=1;i<=100;i++){
+
+         red = Math.trunc(Math.random()*255);
+         green = Math.trunc(Math.random()*255);
+         blue = Math.trunc(Math.random()*255);
+
+         document.writeln("<span style='color:"+getCor(red,green,blue)+"'>");
+
+         document.writeln(i + "</span>");
+
+}
+
+      </script>
+
+   </body>
+
+</html>

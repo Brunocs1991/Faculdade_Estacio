@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Atividade Extra</string>
+    <string name="Texto01">Primeiro Numero</string>
+    <string name="texto02">Segundo Numero</string>
+    <string name="Botao01">Somar</string>
+    <string name="hint">EX: 10</string>
+</resources>

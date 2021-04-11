@@ -1,0 +1,14 @@
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<xsd:element name="colaborador">
+    <xsd:complexType name="tipoColaborador">
+        <xsd:sequence>
+        <xsd:element name="nome" type="xsd:string"/>
+        <xsd:element name="matricula" type="xsd:string">
+            <xsd:complexType>
+                <xsd:attribute name="uf" type="xsd:string"/>
+            </xsd:complexType>
+        </xsd:element>
+        </xsd:sequence>
+     </xsd:complexType>
+</xsd:element>
+</xsd:schema>

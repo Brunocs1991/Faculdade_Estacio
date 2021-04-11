@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf8"?>
+<colaborador xmlns:empresa="01.001.001/0001-01">
+    <nome>Ana Maria</nome>
+    <matricula uf="RJ">20180065-A</matricula>
+    <empresa:nome>Padaria do João</empresa:nome>
+</colaborador>

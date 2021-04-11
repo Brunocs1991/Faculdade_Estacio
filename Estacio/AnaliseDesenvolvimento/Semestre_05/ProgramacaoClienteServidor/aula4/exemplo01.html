@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+		<meta charset="utf-8">
+	</head>
+	<body>
+		<h1>Contatos dos Colaboradores</h1>
+		<ul id="alvo"></ul>
+		<script type="text/javascript">
+			var dados = {"empregados": [
+			{"nome":"Joao" , "telefone":"1111-1111"},
+			{"nome":"Maria" , "telefone":"2222-2222"},
+		    {"nome":"Luiz" , "telefone":"3333-3333"},
+		    {"nome":"Paula" , "telefone":"4444-4444"}
+		    ]};
+			var lista = document.querySelector("#alvo");
+			for (i = 0; i < 4; i++){
+				var contato = dados.empregados[i].nome +" ::"+dados.empregados[i].telefone;
+				var novoElemento = document.createElement("LI");
+				var texto = document.createTextNode(contato);
+				novoElemento.appendChild(texto);
+				lista.appendChild(novoElemento);
+			}
+		</script>
+	</body>
+</html>

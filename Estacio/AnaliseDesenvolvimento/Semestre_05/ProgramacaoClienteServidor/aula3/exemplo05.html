@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+		<meta charset="utf-8">
+	</head>
+	<body>
+		<form method="get" action="http://lugarnenhum" onsubmit="return validar();">
+			Nome:<input type="text" name="nome" id="nome"/><br/>
+			Contribuinte:<input type="radio" name="contrib" id="contrib1" value="S">SIM
+						 <input type="radio" name="contrib" id="contrib2" value="N">NÃO
+			<br/>
+			<input type="submit" value="Cadastrar">
+		</form>
+		<script type="text/javascript">
+			function validar(){
+				var nome = document.getElementById("nome"),
+				contrib1 = document.getElementById("contrib1"),
+				contrib2 = document.getElementById("contrib2");
+				if(nome.value==""){
+					alert("Nome Obrigatório!!");
+					nome.focus();
+					return false;
+				}
+				if(!contrib1.checked && !contrib2.checked){
+					alert("Escolha uma das opções de Contribuinte");
+					return false;
+				}
+				return true
+			}
+		</script>
+	</body>
+</html>

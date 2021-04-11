@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">MeuPrimeiroApp</string>
+    <string name="action_settings">Settings</string>
+    <string name="MeuNome">Bruno Costa e Silva</string>
+    <string name="botaoCopiar">Copiar</string>
+    <string name="hitNome">Nome de exemplo</string>
+</resources>

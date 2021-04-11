@@ -1,0 +1,20 @@
+prog exemploEnquanto
+    int numero,pos,neg;
+    numero <-1;
+    pos<- 0;
+    neg<- 0;
+    enquanto(numero <>0){
+        imprima "\n Escreva o número: ";
+        leia numero;
+        se (numero>0){
+                   pos <- pos+1;
+        }senao{
+               se(numero<0){
+                        neg<-neg+1;
+              }
+        }
+    }
+    imprima "\nTotal de Números positivos: ",pos;
+    imprima "\nTotal de Números negativos: ",neg;
+    imprima "\n";
+fimprog  

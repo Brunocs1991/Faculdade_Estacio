@@ -1,0 +1,29 @@
+<html>
+    <button onclick="atualizar()">Chamar</button>
+    <div id ="resposta">Resposta Aqui</a></div>
+    <script>
+        function atualizar(){
+            var url = "exemplo05.xml";
+            xhttp = new XMLHttpRequest();
+            xhttp.open("GET", url, true);
+            xhttp.onreadystatechange = AJAX_Callback;
+            xhttp.send();
+        }
+        function AJAX_Callback()
+        {
+            if (xhttp.readyState == 4 && xhttp.status == 200) 
+            {
+                var parser = new DOMParser();
+                var xmlDoc = parser.parseFromString(xhttp.responseText,"text/xml");
+                var nomes = xmlDoc.getElementsByTagName("contato");
+                var saida = "<ul>";
+                    for(i=0;i<nomes.length;i++)
+                    {
+                        saida += "<li>"+nomes[i].attributes[0].value+"</li>";
+                    }
+                    saida += "</ul>"
+                    document.getElementById("resposta").innerHTML =saida;
+            }
+        }
+    </script>
+</html>

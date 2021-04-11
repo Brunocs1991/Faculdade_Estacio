@@ -1,0 +1,2 @@
+rootProject.name='AulaPersistencia_2'
+include ':app'

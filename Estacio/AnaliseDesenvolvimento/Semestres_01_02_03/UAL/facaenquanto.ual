@@ -1,0 +1,32 @@
+prog facaEquanto
+     int total;
+     real nota,soma,maior,menor,media;
+     string resposta;
+     soma <- 0.0;
+     total<-0; 
+     faca{
+          total<-total+1;
+          imprima"\nNota ",total,":";
+          leia nota;
+          soma<-soma+nota;
+          se(total==1){
+                       maior<-nota;
+                       menor<-nota;
+                       }
+                       senao{
+                             se (nota>maior){
+                                           maior<-nota;
+                                           }
+                             se (nota<menor){
+                                             menor<-nota;
+                                             }
+                             }
+                             imprima"deseja continuar [s] ou [n]:";
+                             leia resposta;
+          }enquanto(resposta=="s" ||resposta=="S")
+          media<-soma/total;
+          imprima "\nMédia das notas: ", media;
+          imprima "\nMaior nota.....: ", maior;
+          imprima "\nMenor Nota.....: ", menor;    
+          imprima "\n";       
+fimprog

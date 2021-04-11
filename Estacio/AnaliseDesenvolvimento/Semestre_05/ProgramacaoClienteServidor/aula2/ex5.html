@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+		<meta charset="utf-8">
+	</head>
+	<body>
+		<script>
+			function meuProcesso(){
+				a = eval(prompt("Entre com o valor:",""));
+				b = a * 5;
+				document.writeln("<br/>"+a+" * 5 = "+b);
+			}
+			meuProcesso();
+			z = 3;
+			while(z>0) {
+				meuProcesso();
+				z--;
+			}
+			if(confirm("Mais uma vez?")) {
+				meuProcesso();
+			}
+		</script>
+	</body>
+</html>

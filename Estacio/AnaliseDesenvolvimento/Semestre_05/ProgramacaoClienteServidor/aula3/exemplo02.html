@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+		<meta charset="utf-8">
+	</head>
+	<body>
+		<ul id="lista">
+			<li>banada</li>
+			<li>laranja</li>
+			<li>manga</li>
+		</ul>
+		<script type="text/javascript">
+			var obj = document.querySelector("#lista");
+			var filhos = obj.children;
+			var cores = ["orange","yellow","lightgreen"];
+			for (i = 0; i < filhos.length; i++){
+				filhos[i].style.backgroundColor = cores[i];
+			}
+		</script>
+	</body>
+</html>

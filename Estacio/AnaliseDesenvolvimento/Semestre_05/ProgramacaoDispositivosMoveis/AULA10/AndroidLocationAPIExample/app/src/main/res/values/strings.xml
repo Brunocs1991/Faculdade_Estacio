@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">AulaLocation_1</string>
+    <string name="latitude_string">Latitude: </string>
+    <string name="longitude_string">Longitude: </string>
+</resources>

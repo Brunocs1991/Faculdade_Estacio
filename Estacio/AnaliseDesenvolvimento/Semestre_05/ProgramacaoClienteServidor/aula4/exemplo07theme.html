@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>jQuery UI</title>
+        <link rel="stylesheet" href="..\jquery-ui-1.12.1.custom\jquery-ui.css">
+        <link rel="stylesheet" href="..\jquery-ui-1.12.1.custom\jquery-ui.theme.css">
+        <script src="..\jquery-3.4.1.js">
+        </script>
+        <script src="..\jquery-ui-1.12.1\jquery-ui.js">
+        </script>
+        <script>
+            $(function(){
+                $("#menu1").menu();
+                $("#dialogo1").dialog({
+                    autoOpen: false,
+                    show: {effect: "blind", duration: 1000},
+                    hide: {effect: "explode", duration: 1000}
+                });
+                $("#estacio").click(function(){
+                    location.href="http://www.estacio.br";
+                });
+                $("#harvard").click(function(){
+                    location.href="http://www.harvard.com/";
+                });
+                $("#abreDialogo").click(function() {
+                    $("#dialogo1").dialog("open");
+                });
+            });
+        </script>
+        <style>
+            .ui-menu {width: 150px;}
+        </style>
+    </head>
+    <body>
+        <ul id="menu1">
+            <li>
+                <div id = "estacio">Estacio</div>
+            </li>
+            <li>
+                <div id="harvard">Harvard</div>
+            </li>
+            <li>
+                <div>Exemplos</div>
+                <ul>
+                    <li>
+                        <div id="abreDialogo">Diálogo</div>
+                    </li>
+                    <li>
+                        <div>Nada Definido</div>
+                    </li>
+                </ul>
+            </li>
+            <li class="ui-state-disabled">
+                <div>Desabilitado</div>
+            </li>
+        </ul>
+        <div id="dialogo1" title="Diálogo Simples">
+            <p>Apenas uma caixa de diálogo que permite arraste e pode ser fechada no "X"</p>
+        </div>
+    </body>
+</html>
